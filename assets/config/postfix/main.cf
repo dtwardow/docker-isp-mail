@@ -101,3 +101,8 @@ milter_protocol = 6
 # set macros
 milter_connect_macros = i {mail_addr} {client_addr} {client_name} {auth_authen}
 
+# =====================================
+# Quota
+# =====================================
+smtpd_recipient_restrictions = check_policy_service inet:localhost:12340
+
